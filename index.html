@@ -4,7 +4,17 @@
    <head>
       <title>DGMD E-28 Assignment 1</title>
       <style>
-      
+         input[type=text] {
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border-radius: 5px;
+         }
+         input[type=text]:focus {
+            border: 3px solid #555;
+         }
+         
+         
       </style>
    </head>
 
@@ -19,11 +29,11 @@
       <p>Favorite restaurant: <a href="https://whataburger.com/" target="_blank">Whataburger</a></p>
       <form>
          <p>Enter information below to subscribe to newsletter"
-         First name: <input type = "text" name = "first_name" />
-         Last name: <input type = "text" name = "last_name" />
-         E-mail: <input type = "email" name = "email" />
-         Permission to be added to list: <input type = "checkbox" name = "list" value = "on"/>
-         <input type = "submit" name = "submit" value = "Submit" />
+         <div>First name: <input type = "text" name = "first_name" /></div>
+         <div>Last name: <input type = "text" name = "last_name" /></div>
+         <div>E-mail: <input type = "email" name = "email" /></div>
+         <div>Permission to be added to list: <input type = "checkbox" name = "list" value = "on"/></div>
+         <div><input type = "submit" name = "submit" value = "Submit" /></div>
       </form>
    </body>
 
