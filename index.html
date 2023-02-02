@@ -58,6 +58,10 @@
          .form-row > input {
            flex: 2;
          }
+         .form-title {
+            font-size:1.25em;
+            text-align: center;
+         }
          
          @media screen and (max-width: 600px) {
             .column {
@@ -92,11 +96,18 @@
          <div class="column">
             <div class="form-box">
                <form>
-                     <h3>Subscribe to newsletter</h3>
+                     <h3 class="form-title">Subscribe to newsletter</h3>
                      <div class="form-row"><label for="firstname">First name:</label> <input type = "text" name = "first_name" id="firstname"/></div>
                      <div class="form-row"><label for="lastname">Last name:</label> <input type = "text" name = "last_name" id="lastname"/></div>
                      <div class="form-row"><label for="email">E-mail:</label> <input type = "email" name = "email" id="email"/></div>
-               <div class="form-row"><label for="permission">Permission to add to list:</label> <input type = "checkbox" name = "list" value = "on" id="permission"/></div>
+                     <div class="form-row"><label for="permission">Add to mailing list:</label> <input type = "checkbox" name = "list" value = "on" id="permission"/></div>
+                     <div class="form-row"><label for="permission">Add to mailing list:</label> 
+                        <select id="yesno" name="yesno">
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                          </select>
+                      </div>
+                  
                      <div class="form-row"><input type = "submit" name = "submit" value = "Submit" /></div>
                </form>
             </div>
