@@ -25,7 +25,7 @@
             border: 3px solid #555;
          }
          .fav-pic {
-            width: 300px;  
+            max-width: 100%;  
          }
          .box {
             display: flex;
@@ -46,6 +46,28 @@
          .content-box {
             padding: 8px 20px;
          }
+         .form-row {
+           display: flex;
+           justify-content: flex-end;
+           padding: .5em;
+         }
+         .form-row > label {
+           padding: .5em 1em .5em 0;
+           flex: 1;
+         }
+         .form-row > input {
+           flex: 2;
+         }
+         .form-row > input,
+           .form-row > button {
+           padding: .5em;
+         }
+         .form-row > button {
+            background: gray;
+            color: white;
+            border: 0;
+         }
+           
          
          @media screen and (max-width: 600px) {
             .column {
@@ -81,11 +103,11 @@
             <div class="form-box">
                <form>
                   <h3>Subscribe to newsletter</h3>
-                  <div>First name: <input type = "text" name = "first_name" /></div>
-                  <div>Last name: <input type = "text" name = "last_name" /></div>
-                  <div>E-mail: <input type = "email" name = "email" /></div>
-                  <div>Permission to add to list: <input type = "checkbox" name = "list" value = "on"/></div>
-                  <div><input type = "submit" name = "submit" value = "Submit" /></div>
+                  <li class="form-row"><div>First name: <input type = "text" name = "first_name" /></div></li>
+                  <li class="form-row"><div>Last name: <input type = "text" name = "last_name" /></div></li>
+                  <li class="form-row"><div>E-mail: <input type = "email" name = "email" /></div></li>
+                  <li class="form-row"><div>Permission to add to list: <input type = "checkbox" name = "list" value = "on"/></div></li>
+                  <li class="form-row"><div><input type = "submit" name = "submit" value = "Submit" /></div></li>
                </form>
             </div>
          </div>
