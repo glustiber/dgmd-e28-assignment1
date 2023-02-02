@@ -29,9 +29,18 @@
             display: flex;
             flex-direction: row;
          }
-         .child {
+         .column {
             width: 50%;
             height: 100vh;
+         }
+         .page-title {
+            text-align: center;  
+         }
+         
+         @media screen and (max-width: 600px) {
+           .column {
+             width: 100%;
+           }
          }
          
       </style>
@@ -39,7 +48,7 @@
 
    <body>
       
-      <h1>DGMD E-28 Assignment 1</h1>
+      <h1 class="page-title">DGMD E-28 Assignment 1</h1>
       <div class="box">
          <div class="child">
             <p><b>Name:</b> Gregory Lustiber</p>
