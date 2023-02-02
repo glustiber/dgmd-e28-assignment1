@@ -37,6 +37,10 @@
             background-color: #E7E9EB;
             border-radius: 5px;
             padding: 8px 20px;
+            display: inline-block;
+         }
+         .content-box {
+            padding: 8px 20px;
          }
          
          @media screen and (max-width: 600px) {
@@ -53,13 +57,15 @@
       <h1 class="page-title">DGMD E-28 Assignment 1</h1>
       <div class="box">
          <div class="column">
-            <p><b>Name:</b> Gregory Lustiber</p>
-            <p><b>Location:</b> Raleigh, NC</p>
-            <p><b>Major:</b> Front-end Web Development Graduate Certificate</p>
-            <p><b>Web development background:</b> I worked as a web developer for a medical startup building basic WordPress sites, themes, plugins.  I have also worked as a freelancer.  I have taken a few extension school courses, including CS50, Big Data Analytics, Java for Distributed Computing.</p>
-            <p><b>Favorite place:</b> Red Rocks Ampitheater - Morrison, CO</p>
-            <img class="fav-pic" src="https://media.tacdn.com/media/attractions-splice-spp-674x446/0b/aa/59/2c.jpg" alt="red rocks" />
-            <p><b>Favorite restaurant:</b> <a href="https://whataburger.com/" target="_blank">Whataburger</a></p>
+            <div class="content-box">
+               <p><b>Name:</b> Gregory Lustiber</p>
+               <p><b>Location:</b> Raleigh, NC</p>
+               <p><b>Major:</b> Front-end Web Development Graduate Certificate</p>
+               <p><b>Web development background:</b> I worked as a web developer for a medical startup building basic WordPress sites, themes, plugins.  I have also worked as a freelancer.  I have taken a few extension school courses, including CS50, Big Data Analytics, Java for Distributed Computing.</p>
+               <p><b>Favorite place:</b> Red Rocks Ampitheater - Morrison, CO</p>
+               <img class="fav-pic" src="https://media.tacdn.com/media/attractions-splice-spp-674x446/0b/aa/59/2c.jpg" alt="red rocks" />
+               <p><b>Favorite restaurant:</b> <a href="https://whataburger.com/" target="_blank">Whataburger</a></p>
+            </div>
          </div>
          <div class="column">
             <div class="form-box">
@@ -68,7 +74,7 @@
                   <div>First name: <input type = "text" name = "first_name" /></div>
                   <div>Last name: <input type = "text" name = "last_name" /></div>
                   <div>E-mail: <input type = "email" name = "email" /></div>
-                  <div>Permission to be added to list: <input type = "checkbox" name = "list" value = "on"/></div>
+                  <div>Permission to add to list: <input type = "checkbox" name = "list" value = "on"/></div>
                   <div><input type = "submit" name = "submit" value = "Submit" /></div>
                </form>
             </div>
