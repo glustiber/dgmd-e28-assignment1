@@ -16,33 +16,41 @@
             box-sizing: border-box;
             border-radius: 5px;
          }
+         input[type=submit] {
+            width: 100%;
+         }
          input[type=text]:focus {
             border: 3px solid #555;
          }
          .fav-pic {
             width: 300px;  
          }
+         .box {
+            display: flex;  
+         }
          
       </style>
    </head>
 
    <body>
-      <h1>DGMD E-28 Assignment 1</h1>
-      <p><b>Name:</b> Gregory Lustiber</p>
-      <p><b>Location:</b> Raleigh, NC</p>
-      <p><b>Major:</b> Front-end Web Development Graduate Certificate</p>
-      <p><b>Web development background:</b> I worked as a web developer for a medical startup building basic WordPress sites, themes, plugins.  I have also worked as a freelancer.  I have taken a few extension school courses, including CS50, Big Data Analytics, Java for Distributed Computing.</p>
-      <p><b>Favorite place:</b> Red Rocks Ampitheater - Morrison, CO</p>
-      <img class="fav-pic" src="https://media.tacdn.com/media/attractions-splice-spp-674x446/0b/aa/59/2c.jpg" alt="red rocks" />
-      <p><b>Favorite restaurant:</b> <a href="https://whataburger.com/" target="_blank">Whataburger</a></p>
-      <form>
-         <h3>Enter information below to subscribe to newsletter</h3>
-         <div>First name: <input type = "text" name = "first_name" /></div>
-         <div>Last name: <input type = "text" name = "last_name" /></div>
-         <div>E-mail: <input type = "email" name = "email" /></div>
-         <div>Permission to be added to list: <input type = "checkbox" name = "list" value = "on"/></div>
-         <div><input type = "submit" name = "submit" value = "Submit" /></div>
-      </form>
+      <div class="box">
+         <h1>DGMD E-28 Assignment 1</h1>
+         <p><b>Name:</b> Gregory Lustiber</p>
+         <p><b>Location:</b> Raleigh, NC</p>
+         <p><b>Major:</b> Front-end Web Development Graduate Certificate</p>
+         <p><b>Web development background:</b> I worked as a web developer for a medical startup building basic WordPress sites, themes, plugins.  I have also worked as a freelancer.  I have taken a few extension school courses, including CS50, Big Data Analytics, Java for Distributed Computing.</p>
+         <p><b>Favorite place:</b> Red Rocks Ampitheater - Morrison, CO</p>
+         <img class="fav-pic" src="https://media.tacdn.com/media/attractions-splice-spp-674x446/0b/aa/59/2c.jpg" alt="red rocks" />
+         <p><b>Favorite restaurant:</b> <a href="https://whataburger.com/" target="_blank">Whataburger</a></p>
+         <form>
+            <h3>Subscribe to newsletter</h3>
+            <div>First name: <input type = "text" name = "first_name" /></div>
+            <div>Last name: <input type = "text" name = "last_name" /></div>
+            <div>E-mail: <input type = "email" name = "email" /></div>
+            <div>Permission to be added to list: <input type = "checkbox" name = "list" value = "on"/></div>
+            <div><input type = "submit" name = "submit" value = "Submit" /></div>
+         </form>
+      </div>
    </body>
 
 </html>
